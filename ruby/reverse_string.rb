@@ -1,5 +1,7 @@
 def reverse_string(str)
-  # type your code in here
+  result = []
+  str.each_char { |i| result.prepend i }
+  result.join
 end
 
 if __FILE__ == $PROGRAM_NAME
